@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>开始使用layui</title>
+    <link rel="stylesheet" href="/layui/css/layui.css">
+</head>
+<body>
+<p th:text="'Hello, ' + ${username} + '!'" >hhhh</p>
+<p th:text="'Hello, ' + ${username} + '!'" >hhhh</p><p th:text="'Hello, ' + ${username} + '!'" >hhhh</p><p th:text="'Hello, ' + ${username} + '!'" >hhhh</p>
+<!-- 你的HTML代码 -->
+layui.code
+<button type="button" class="layui-btn">一个标准的按钮</button>
+<a href="http://www.layui.com" class="layui-btn layui-btn-warm">一个可跳转的按钮</a>
+<script src="/layui/layui.all.js"></script>
+<script>
+    layui.use('layer', function(){
+        var layer = layui.layer;
+
+        layer.msg('hello');
+    });
+</script>
+</body>
+</html>
